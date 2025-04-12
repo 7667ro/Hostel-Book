@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  server:
+    image: ${DOCKER_USERNAME}/backend:latest
+    container_name: backend-server
+    ports:
+      - "3010:3010"
+    environment:
+      - PORT=3010
+      - MONGO=${MONGO}
+      - JWT_SECRET=${JWT_SECRET}
+    restart: unless-stopped

@@ -9,16 +9,28 @@ import path from 'path';
 import cors from 'cors';
 dotenv.config();
 
+// mongoose
+//   .connect(process.env.MONGO)
+//   .then(() => {
+//     console.log('Connected to MongoDB!');
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 mongoose
-  .connect(process.env.MONGO)
+  .connect(process.env.MONGO, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 30000, // 30 seconds for selecting a server
+    socketTimeoutMS: 45000, // 45 seconds for socket timeout
+  })
   .then(() => {
     console.log('Connected to MongoDB!');
   })
   .catch((err) => {
     console.log(err);
   });
-
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 const app = express();
 
 app.use(express.json());

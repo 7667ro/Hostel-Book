@@ -38,12 +38,12 @@ app.use(express.json());
 app.use(cookieParser());
 const PORT = process.env.PORT || 3010
 app.listen(PORT, () => {
-  console.log('Server is running on port 3010!');
+  console.log('Server is running on port 3010!',process.env.MONGO);
 });
 app.use(cors());
 
 app.get('/api', (req, res) => {
-  res.send('✅ Backend is running!',process.env.MONGO);
+  res.send('✅ Backend is running!');
 });
 
 app.use('/api/user', userRouter);

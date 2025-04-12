@@ -43,7 +43,7 @@ app.listen(PORT, () => {
 app.use(cors());
 
 app.get('/api', (req, res) => {
-  res.send('✅ Backend is running!');
+  res.send('✅ Backend is running!',process.env.MONGO);
 });
 
 app.use('/api/user', userRouter);

@@ -46,7 +46,8 @@ jobs:
           export DOCKER_USERNAME=${{ secrets.DOCKER_USERNAME }}
           export MONGO=${{secrets.MONGO}}
           export JWT_SECRET=${{secrets.JWT_SECRET}}
-          docker-compose down --rmi all
+          docker compose down --rmi all
           docker system prune -af
-          docker-compose pull
-          docker-compose up -d --force-recreate
+          docker compose pull
+          docker compose up -d --force-recreate
+

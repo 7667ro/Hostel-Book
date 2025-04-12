@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   server:
-    image: ${DOCKER_USERNAME}/backend:latest
+    image: ${DOCKER_USERNAME}/my-mern-backend:latest
     container_name: backend-server
     ports:
       - "3010:3010"

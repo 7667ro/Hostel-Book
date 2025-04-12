@@ -30,6 +30,10 @@ app.listen(PORT, () => {
 });
 app.use(cors());
 
+app.get('/api', (req, res) => {
+  res.send('✅ Backend is running!');
+});
+
 app.use('/api/user', userRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/listing', listingRouter);

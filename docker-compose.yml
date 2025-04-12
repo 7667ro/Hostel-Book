@@ -8,6 +8,6 @@ services:
       - "3010:3010"
     environment:
       - PORT=3010
-      - MONGO=${MONGO}
+      - MONGO=mongodb+srv://Roshan:Roshan@mern.f4ucev3.mongodb.net/Mern-Project?retryWrites=true&w=majority&appName=Mern
       - JWT_SECRET=${JWT_SECRET}
     restart: unless-stopped

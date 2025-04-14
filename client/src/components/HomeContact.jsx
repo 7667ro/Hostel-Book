@@ -80,7 +80,7 @@ export default function HomeContact() {
                                     />
                                 </svg>
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                                    MatrixHostel@gmail.com
+                                    HOSTELHUNTER@gmail.com
                                 </div>
                             </div>
                         </div>

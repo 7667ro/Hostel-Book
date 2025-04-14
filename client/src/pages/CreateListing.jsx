@@ -10,6 +10,7 @@ import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 export default function CreateListing() {
+  const API_URL = import.meta.env.VITE_API_URL;
   const navigate = useNavigate();
   const { currentUser } = useSelector((state) => state.user);
 
@@ -118,7 +119,7 @@ export default function CreateListing() {
     setError('');
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}listing/create`, {
+      const res = await fetch(`${API_URL}listing/create`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...formData, userRef: currentUser._id }),

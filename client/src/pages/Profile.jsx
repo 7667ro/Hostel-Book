@@ -125,7 +125,7 @@ export default function Profile() {
   const handleShowListings = async () => {
     try {
       setShowListingsError(false);
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/user/listings/${currentUser._id}`);
+      const res = await fetch(`${import.meta.env.VITE_API_URL}user/listings/${currentUser._id}`);
       const data = await res.json();
       if (data.success === false) {
         setShowListingsError(true);

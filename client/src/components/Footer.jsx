@@ -7,8 +7,8 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0 mt-10">
                     <Link to='/'>
                     <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
-                        <span className='text-slate-500 italic'>MATRIX</span>
-                        <span className='text-slate-700 italic'>HOSTEL</span>
+                        <span className='text-slate-500 italic'>HOSTEL</span>
+                        <span className='text-slate-700 italic'>HUNTER</span>
                     </h1>
                     </Link>
                     </div>
@@ -70,7 +70,7 @@ export default function Footer() {
                     <span className="text-sm text-gray-500 sm:text-center">
                         © 2024
                         <a href="" className="hover:underline">
-                            MatrixHostel
+                            HOSTELHUNTER
                         </a>
                         . All Rights Reserved.
                     </span>

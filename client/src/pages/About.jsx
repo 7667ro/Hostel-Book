@@ -11,8 +11,8 @@ export default function About() {
                       />
                   </div>
                   <div className="md:7/12 lg:w-6/12">
-                  <h1 className='text-3xl font-bold mb-4 text-slate-800 italic'>Welcome to MatrixHunter!</h1>
-                    <p className='mb-4 text-slate-700'>At MatrixHunter, we understand that finding the perfect hostel for your travels can make all the difference in your journey. Whether you're a solo traveler seeking new adventures, a group of friends exploring together, or a family on a budget-friendly vacation, HostelHunter is here to make your hostel search experience seamless and enjoyable.</p>
+                  <h1 className='text-3xl font-bold mb-4 text-slate-800 italic'>Welcome to HostelHunter!</h1>
+                    <p className='mb-4 text-slate-700'>At HostelHunter, we understand that finding the perfect hostel for your travels can make all the difference in your journey. Whether you're a solo traveler seeking new adventures, a group of friends exploring together, or a family on a budget-friendly vacation, HostelHunter is here to make your hostel search experience seamless and enjoyable.</p>
                     <p className='mb-4 text-slate-700'>
                      What sets HostelHunter apart is our dedication to providing comprehensive hostel listings, insightful reviews, and helpful travel tips to empower you in making informed decisions about your accommodations. Whether you're searching for a cozy hostel in the heart of a bustling city, a rustic retreat nestled in nature, or a vibrant hostel with a lively atmosphere, we've got you covered.
                       </p>
